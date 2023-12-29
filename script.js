@@ -1,8 +1,13 @@
 function firstChar(text) {
-  // your code here
+  const trimmedText = text.trim();
+
+  if (trimmedText !== '') {
+    return trimmedText.charAt(0);
+  } else {
+    return '';
+  }
 }
 
-// Do not change the code below
-
+// Example of using the function with user input
 const text = prompt("Enter text:");
 alert(firstChar(text));
